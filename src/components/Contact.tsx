@@ -114,8 +114,8 @@ const Contact = () => {
               </span>
             </h2>
             <p className="scroll-animate text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Have a project in mind? I'd love to hear about it. Send me a message
-              and let's discuss how we can bring your ideas to life.
+              Have a project in mind? I'd love to hear about it. Send me a
+              message and let's discuss how we can bring your ideas to life.
             </p>
           </div>
 
@@ -184,7 +184,10 @@ const Contact = () => {
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Field */}
-                  <div className="scroll-animate" style={{ animationDelay: '200ms' }}>
+                  <div
+                    className="scroll-animate"
+                    style={{ animationDelay: "200ms" }}
+                  >
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium text-gray-700 mb-2"
@@ -204,7 +207,10 @@ const Contact = () => {
                   </div>
 
                   {/* Email Field */}
-                  <div className="scroll-animate" style={{ animationDelay: '300ms' }}>
+                  <div
+                    className="scroll-animate"
+                    style={{ animationDelay: "300ms" }}
+                  >
                     <label
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-2"
@@ -224,7 +230,10 @@ const Contact = () => {
                   </div>
 
                   {/* Subject Field */}
-                  <div className="scroll-animate" style={{ animationDelay: '400ms' }}>
+                  <div
+                    className="scroll-animate"
+                    style={{ animationDelay: "400ms" }}
+                  >
                     <label
                       htmlFor="subject"
                       className="block text-sm font-medium text-gray-700 mb-2"
@@ -244,7 +253,10 @@ const Contact = () => {
                   </div>
 
                   {/* Message Field */}
-                  <div className="scroll-animate" style={{ animationDelay: '500ms' }}>
+                  <div
+                    className="scroll-animate"
+                    style={{ animationDelay: "500ms" }}
+                  >
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700 mb-2"
@@ -264,7 +276,10 @@ const Contact = () => {
                   </div>
 
                   {/* Submit Button */}
-                  <div className="scroll-animate" style={{ animationDelay: '600ms' }}>
+                  <div
+                    className="scroll-animate"
+                    style={{ animationDelay: "600ms" }}
+                  >
                     <button
                       type="submit"
                       className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center space-x-2 hover-scale shadow-lg hover:shadow-xl"
@@ -292,7 +307,7 @@ const Contact = () => {
                 <a
                   href="mailto:hisyam.dev@example.com"
                   className="scroll-animate hover-scale inline-flex items-center space-x-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                  style={{ animationDelay: '200ms' }}
+                  style={{ animationDelay: "200ms" }}
                 >
                   <Mail className="w-5 h-5" />
                   <span>Email Me</span>
@@ -302,7 +317,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="scroll-animate hover-scale inline-flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300"
-                  style={{ animationDelay: '300ms' }}
+                  style={{ animationDelay: "300ms" }}
                 >
                   <Github className="w-5 h-5" />
                   <span>View GitHub</span>

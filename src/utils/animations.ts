@@ -111,18 +111,21 @@ export const smoothAnimations = `
 `;
 
 // Unified scroll observer hook with reverse animations and advanced options
-export const useScrollAnimation = (sectionRef: RefObject<HTMLElement>, options?: {
-  threshold?: number;
-  rootMargin?: string;
-  reverseOnExit?: boolean;
-  staggerDelay?: number;
-}) => {
+export const useScrollAnimation = (
+  sectionRef: RefObject<HTMLElement>,
+  options?: {
+    threshold?: number;
+    rootMargin?: string;
+    reverseOnExit?: boolean;
+    staggerDelay?: number;
+  }
+) => {
   useEffect(() => {
     const {
       threshold = 0.15,
       rootMargin = "0px 0px -50px 0px",
       reverseOnExit = true,
-      staggerDelay = 100
+      staggerDelay = 100,
     } = options || {};
 
     const observer = new IntersectionObserver(
@@ -153,7 +156,7 @@ export const useScrollAnimation = (sectionRef: RefObject<HTMLElement>, options?:
         if (index < 4) {
           el.classList.add(`scroll-animate-delay-${index + 1}`);
         }
-        
+
         // Staggered observation for smooth sequence
         setTimeout(() => {
           observer.observe(el);
